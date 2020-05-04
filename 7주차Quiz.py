@@ -3,7 +3,7 @@ from tkinter.filedialog import *
 
 ## 함수 선언 부분 ##
 
-def brighter() :
+def brighter() : #어둡게 해줌
     global inImage, XSIZE, YSIZE
     rgbString = ""
     for i in range(0, XSIZE) :
@@ -16,7 +16,7 @@ def brighter() :
         rgbString += "{" + tmpString +  "} " # } 뒤에 한칸 공백
     paper.put(rgbString)
 
-def darker() :
+def darker() : #밝게 해줌
     global inImage, XSIZE, YSIZE
     rgbString = ""
     for i in range(0, XSIZE) :
